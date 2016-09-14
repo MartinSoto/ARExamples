@@ -1155,7 +1155,7 @@
 		  	}
 		};
 
-		if ( false ) {
+		if ( true ) {
 		// if ( navigator.mediaDevices || window.MediaStreamTrack) {
 			if (navigator.mediaDevices) {
 				navigator.mediaDevices.getUserMedia({
