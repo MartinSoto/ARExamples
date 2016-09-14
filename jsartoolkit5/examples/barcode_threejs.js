@@ -2,7 +2,7 @@ window.ARThreeOnLoad = function() {
   ARController.getUserMediaThreeScene({
     maxARVideoSize: 320,
     cameraParam: 'Data/camera_para-iPhone 5 rear 640x480 1.0m.dat',
-    facingMode: "environment",
+    facingMode: "user",
     onSuccess: function(arScene, arController, arCamera) {
       document.body.className = arController.orientation;
 
