@@ -1158,9 +1158,11 @@
 		if ( true ) {
 		// if ( navigator.mediaDevices || window.MediaStreamTrack) {
 			if (navigator.mediaDevices) {
+        console.debug(mediaDevicesConstraints);
 				navigator.mediaDevices.getUserMedia({
 					audio: false,
-					video: mediaDevicesConstraints
+					//video: mediaDevicesConstraints
+          video: true
 				}).then(success, onError); 
 			} else {
 				MediaStreamTrack.getSources(function(sources) {
