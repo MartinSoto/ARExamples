@@ -1163,7 +1163,7 @@
 					audio: false,
 					//video: mediaDevicesConstraints
           video: {
-            facingMode: { exact: "environment" }
+            facingMode: "environment"
           }
 				}).then(success, onError); 
 			} else {
