@@ -1143,7 +1143,9 @@
 			}
 		}
 
-		mediaDevicesConstraints.facingMode = facing;
+    if (mediaDevicesConstraints.facingMode) {
+		  mediaDevicesConstraints.facingMode = facing;
+    }
 
 		navigator.getUserMedia  = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
 		var hdConstraints = {
