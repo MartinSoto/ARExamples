@@ -1162,7 +1162,9 @@
 				navigator.mediaDevices.getUserMedia({
 					audio: false,
 					//video: mediaDevicesConstraints
-          video: true
+          video: {
+            'facingMode': 'environment'
+          }
 				}).then(success, onError); 
 			} else {
 				MediaStreamTrack.getSources(function(sources) {
